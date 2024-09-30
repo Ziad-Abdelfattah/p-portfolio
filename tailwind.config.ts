@@ -26,15 +26,16 @@ const config: Config = {
         primary: '#1c1c22',
         accent: {
           DEFAULT: '#00ff99',
-          hover: '#00e187'
-      },
-      borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
+          hover: '#00e187',
+        },
+        borderRadius: {
+          lg: 'var(--radius)',
+          md: 'calc(var(--radius) - 2px)',
+          sm: 'calc(var(--radius) - 4px)',
+        },
       },
     },
+    plugins: [require('tailwindcss-animate')],
   },
-  plugins: [require('tailwindcss-animate')],
 };
 export default config;
